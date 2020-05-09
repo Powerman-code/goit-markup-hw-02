@@ -1,3 +1,80 @@
-body {
-background-color:;
+/* цвет основного текста #212121 */
+/* акцент  #2196F3; */
+/* цвет текста 2 и хедера #FFFFFF */
+/* цвет текста 3 #757575 */
+/* цвет фона #E5E5E5 */
+/* цвет фона вторичный #F5F4FA */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color:#212121;
+  --accent-color:#2196F3;
+  --header-and-text-color:#FFFFFF;
 }
+
+
+body {
+  background-color:#E5E5E5;
+  color: var(--title-text-color);
+}
+
+/* Применится ко всем ссылкам на странице */
+a {
+    text-decoration: none;
+  }
+
+/* Применится ко всем сспискам на странице */
+ul {
+  list-style: none;
+}
+
+/* Header */
+
+.page-header {
+  background-color: var(--header-and-text-color);
+}
+
+.logo {
+  color: var(--title-text-color);
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+/* Site nav */
+
+.site-nav .link {
+  color:var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero-title {
+  color: var(--header-and-text-color);
+}
+/* Section */
+.section-title  {
+  color: ;
+}
+.text {
+  color: var(--primary-text-color);
+}
+
+/* Чем мы занимаемся */
+.work-list {
+  color: var(--header-and-text-color);
+}
+.work .work-ref {
+  color: var(--header-and-text-color);
+}
+
+
+.team {
+  background: #F5F4FA;
+}
+.team .team-text {
+  color: var(--primary-text-color);
+}
+
