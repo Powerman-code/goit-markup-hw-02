@@ -4,14 +4,17 @@
 /* цвет текста 3 #757575 */
 /* цвет фона #E5E5E5 */
 /* цвет фона вторичный #F5F4FA */
+/* цыет футера #2F303A */
 
 :root {
   --primary-text-color: #757575;
   --title-text-color:#212121;
   --accent-color:#2196F3;
   --header-and-text-color:#FFFFFF;
+  --footer-color: #2F303A;
 }
 
+h1,h2,h3
 
 body {
   background-color:#E5E5E5;
@@ -50,6 +53,26 @@ ul {
   color: var(--accent-color);
 }
 
+
+.email {
+  color: var(--title-text-color);
+}
+
+.email:hover,
+.email:focus {
+  color: var(--accent-color);
+}
+
+.phone {
+  color: var(--title-text-color);
+}
+
+.phone:hover,
+.phone:focus {
+  color: var(--accent-color);
+}
+
+
 /* Hero */
 .hero-title {
   color: var(--header-and-text-color);
@@ -70,11 +93,43 @@ ul {
   color: var(--header-and-text-color);
 }
 
+/* Наша команда */
 
 .team {
   background: #F5F4FA;
 }
 .team .team-text {
   color: var(--primary-text-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--footer-color);
+}
+.footer .footer-adress1 {
+  color: var(--header-and-text-color);
+}
+
+.footer .footer-adress2 {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .join {
+  color: var(--header-and-text-color);
+}
+
+.footer .subscribe {
+  color: var(--header-and-text-color);
+}
+
+
+
+/* Buttons */
+
+.button {
+  color: var(--header-and-text-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
 }
 
