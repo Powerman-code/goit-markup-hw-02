@@ -12,9 +12,10 @@
   --accent-color:#2196F3;
   --header-and-text-color:#FFFFFF;
   --footer-color: #2F303A;
+  --secondary-background-and-button-color: #F5F4FA;
+  --fone-color: #E5E5E5;
 }
 
-h1,h2,h3
 
 body {
   background-color:#E5E5E5;
@@ -40,7 +41,12 @@ ul {
 .logo {
   color: var(--title-text-color);
 }
-.logo:hover {
+
+.logo-bottom {
+  color: var(--header-and-text-color);
+}
+
+.accent {
   color: var(--accent-color);
 }
 /* Site nav */
@@ -52,7 +58,9 @@ ul {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 
 .email {
   color: var(--title-text-color);
@@ -123,13 +131,45 @@ ul {
   color: var(--header-and-text-color);
 }
 
-
-
 /* Buttons */
 
 .button {
-  color: var(--header-and-text-color);
+  color: var(--title-text-color);
   background-color: var(--accent-color);
+
   font-size: 16px;
+  padding: 12px 24px;
+  display: inline-block;
 }
 
+.button.primary {
+  color: var(--header-and-text-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-and-button-color);
+  border-color: transparent;
+}
+
+.button:focus {
+  color: var(--accent-color);
+  background-color: var(--header-and-text-color);
+}
+
+.button:hover {
+  color: var(--accent-color);
+  background-color: var(--header-and-text-color);
+}
+
+.button.secondary:hover {
+  color: var(--header-and-text-color);
+  background-color: var(--accent-color);
+}
+
+.button:focus {
+  color: var(--header-and-text-color);
+  background-color: var(--accent-color);
+}
