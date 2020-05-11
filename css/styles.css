@@ -306,7 +306,43 @@ ul {
   background-color: var(--accent-color);
 }
 
-.button:focus {
+/* .button.secondary:focus {
   color: var(--header-and-text-color);
   background-color: var(--accent-color);
+} */
+
+/* ПОРТФОЛИО */
+
+.portfolio {
+  color: var(--title-text-color)
 }
+
+.technocrack-header,
+.new-orlean-poster-header,
+.seafood-header,
+.prime-header,
+.boxes-header,
+.inspiration-header,
+.limited-edition-header,
+.lab-header,
+.growing-business-header {
+  color: var(--title-text-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-description {
+  color: var(--primary-text-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
